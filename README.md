@@ -1,6 +1,6 @@
 ## Synopsis
 
-This is a fork from amazon official SDK. amzn/amazon-advertising-api-php-sdk
+This is a fork from amazon official SDK. <a href="https://github.com/amzn/amazon-advertising-api-php-sdk">amzn/amazon-advertising-api-php-sdk</a>
 
 ## Requirements
 
