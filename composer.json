@@ -18,6 +18,11 @@
             "email": "nobody@amazon.com"
         }
     ],
+    "extra": {
+        "branch-alias": {
+            "dev-v2": "v2.x-dev"
+        }
+    },
     "autoload": {
         "psr-4": {
             "AmazonAdvertisingApi\\": "AmazonAdvertisingApi/"
