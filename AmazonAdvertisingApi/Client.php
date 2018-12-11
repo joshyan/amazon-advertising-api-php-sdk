@@ -114,214 +114,214 @@ class Client
         return $this->_operation("profiles", $data, "PUT");
     }
 
-    public function getCampaign($campaignId)
+    public function getCampaign($campaignId, $type = "sp")
     {
-        return $this->_operation("campaigns/{$campaignId}");
+        return $this->_operation("{$type}/campaigns/{$campaignId}");
     }
 
-    public function getCampaignEx($campaignId)
+    public function getCampaignEx($campaignId, $type = "sp")
     {
-        return $this->_operation("campaigns/extended/{$campaignId}");
+        return $this->_operation("{$type}/campaigns/extended/{$campaignId}");
     }
 
     public function createCampaigns($data)
     {
-        return $this->_operation("campaigns", $data, "POST");
+        return $this->_operation("sp/campaigns", $data, "POST");
     }
 
-    public function updateCampaigns($data)
+    public function updateCampaigns($data, $type = "sp")
     {
-        return $this->_operation("campaigns", $data, "PUT");
+        return $this->_operation("{$type}/campaigns", $data, "PUT");
     }
 
-    public function archiveCampaign($campaignId)
+    public function archiveCampaign($campaignId, $type = "sp")
     {
-        return $this->_operation("campaigns/{$campaignId}", null, "DELETE");
+        return $this->_operation("{$type}/campaigns/{$campaignId}", null, "DELETE");
     }
 
-    public function listCampaigns($data = null)
+    public function listCampaigns($data = null, $type = "sp")
     {
-        return $this->_operation("campaigns", $data);
+        return $this->_operation("{$type}/campaigns", $data);
     }
 
-    public function listCampaignsEx($data = null)
+    public function listCampaignsEx($data = null, $type = "sp")
     {
-        return $this->_operation("campaigns/extended", $data);
+        return $this->_operation("{$type}/campaigns/extended", $data);
     }
 
     public function getAdGroup($adGroupId)
     {
-        return $this->_operation("adGroups/{$adGroupId}");
+        return $this->_operation("sp/adGroups/{$adGroupId}");
     }
 
     public function getAdGroupEx($adGroupId)
     {
-        return $this->_operation("adGroups/extended/{$adGroupId}");
+        return $this->_operation("sp/adGroups/extended/{$adGroupId}");
     }
 
     public function createAdGroups($data)
     {
-        return $this->_operation("adGroups", $data, "POST");
+        return $this->_operation("sp/adGroups", $data, "POST");
     }
 
     public function updateAdGroups($data)
     {
-        return $this->_operation("adGroups", $data, "PUT");
+        return $this->_operation("sp/adGroups", $data, "PUT");
     }
 
     public function archiveAdGroup($adGroupId)
     {
-        return $this->_operation("adGroups/{$adGroupId}", null, "DELETE");
+        return $this->_operation("sp/adGroups/{$adGroupId}", null, "DELETE");
     }
 
     public function listAdGroups($data = null)
     {
-        return $this->_operation("adGroups", $data);
+        return $this->_operation("sp/adGroups", $data);
     }
 
     public function listAdGroupsEx($data = null)
     {
-        return $this->_operation("adGroups/extended", $data);
+        return $this->_operation("sp/adGroups/extended", $data);
     }
 
-    public function getBiddableKeyword($keywordId)
+    public function getBiddableKeyword($keywordId, $type = "sp")
     {
-        return $this->_operation("keywords/{$keywordId}");
+        return $this->_operation("{$type}/keywords/{$keywordId}");
     }
 
-    public function getBiddableKeywordEx($keywordId)
+    public function getBiddableKeywordEx($keywordId, $type = "sp")
     {
-        return $this->_operation("keywords/extended/{$keywordId}");
+        return $this->_operation("{$type}/keywords/extended/{$keywordId}");
     }
 
-    public function createBiddableKeywords($data)
+    public function createBiddableKeywords($data, $type = "sp")
     {
-        return $this->_operation("keywords", $data, "POST");
+        return $this->_operation("{$type}/keywords", $data, "POST");
     }
 
-    public function updateBiddableKeywords($data)
+    public function updateBiddableKeywords($data, $type = "sp")
     {
-        return $this->_operation("keywords", $data, "PUT");
+        return $this->_operation("{$type}/keywords", $data, "PUT");
     }
 
-    public function archiveBiddableKeyword($keywordId)
+    public function archiveBiddableKeyword($keywordId, $type = "sp")
     {
-        return $this->_operation("keywords/{$keywordId}", null, "DELETE");
+        return $this->_operation("{$type}/keywords/{$keywordId}", null, "DELETE");
     }
 
     public function listBiddableKeywords($data = null)
     {
-        return $this->_operation("keywords", $data);
+        return $this->_operation("sp/keywords", $data);
     }
 
     public function listBiddableKeywordsEx($data = null)
     {
-        return $this->_operation("keywords/extended", $data);
+        return $this->_operation("sp/keywords/extended", $data);
     }
 
     public function getNegativeKeyword($keywordId)
     {
-        return $this->_operation("negativeKeywords/{$keywordId}");
+        return $this->_operation("sp/negativeKeywords/{$keywordId}");
     }
 
     public function getNegativeKeywordEx($keywordId)
     {
-        return $this->_operation("negativeKeywords/extended/{$keywordId}");
+        return $this->_operation("sp/negativeKeywords/extended/{$keywordId}");
     }
 
     public function createNegativeKeywords($data)
     {
-        return $this->_operation("negativeKeywords", $data, "POST");
+        return $this->_operation("sp/negativeKeywords", $data, "POST");
     }
 
     public function updateNegativeKeywords($data)
     {
-        return $this->_operation("negativeKeywords", $data, "PUT");
+        return $this->_operation("sp/negativeKeywords", $data, "PUT");
     }
 
     public function archiveNegativeKeyword($keywordId)
     {
-        return $this->_operation("negativeKeywords/{$keywordId}", null, "DELETE");
+        return $this->_operation("sp/negativeKeywords/{$keywordId}", null, "DELETE");
     }
 
     public function listNegativeKeywords($data = null)
     {
-        return $this->_operation("negativeKeywords", $data);
+        return $this->_operation("sp/negativeKeywords", $data);
     }
 
     public function listNegativeKeywordsEx($data = null)
     {
-        return $this->_operation("negativeKeywords/extended", $data);
+        return $this->_operation("sp/negativeKeywords/extended", $data);
     }
 
     public function getCampaignNegativeKeyword($keywordId)
     {
-        return $this->_operation("campaignNegativeKeywords/{$keywordId}");
+        return $this->_operation("sp/campaignNegativeKeywords/{$keywordId}");
     }
 
     public function getCampaignNegativeKeywordEx($keywordId)
     {
-        return $this->_operation("campaignNegativeKeywords/extended/{$keywordId}");
+        return $this->_operation("sp/campaignNegativeKeywords/extended/{$keywordId}");
     }
 
     public function createCampaignNegativeKeywords($data)
     {
-        return $this->_operation("campaignNegativeKeywords", $data, "POST");
+        return $this->_operation("sp/campaignNegativeKeywords", $data, "POST");
     }
 
     public function updateCampaignNegativeKeywords($data)
     {
-        return $this->_operation("campaignNegativeKeywords", $data, "PUT");
+        return $this->_operation("sp/campaignNegativeKeywords", $data, "PUT");
     }
 
     public function removeCampaignNegativeKeyword($keywordId)
     {
-        return $this->_operation("campaignNegativeKeywords/{$keywordId}", null, "DELETE");
+        return $this->_operation("sp/campaignNegativeKeywords/{$keywordId}", null, "DELETE");
     }
 
     public function listCampaignNegativeKeywords($data = null)
     {
-        return $this->_operation("campaignNegativeKeywords", $data);
+        return $this->_operation("sp/campaignNegativeKeywords", $data);
     }
 
     public function listCampaignNegativeKeywordsEx($data = null)
     {
-        return $this->_operation("campaignNegativeKeywords/extended", $data);
+        return $this->_operation("sp/campaignNegativeKeywords/extended", $data);
     }
 
     public function getProductAd($productAdId)
     {
-        return $this->_operation("productAds/{$productAdId}");
+        return $this->_operation("sp/productAds/{$productAdId}");
     }
 
     public function getProductAdEx($productAdId)
     {
-        return $this->_operation("productAds/extended/{$productAdId}");
+        return $this->_operation("sp/productAds/extended/{$productAdId}");
     }
 
     public function createProductAds($data)
     {
-        return $this->_operation("productAds", $data, "POST");
+        return $this->_operation("sp/productAds", $data, "POST");
     }
 
     public function updateProductAds($data)
     {
-        return $this->_operation("productAds", $data, "PUT");
+        return $this->_operation("sp/productAds", $data, "PUT");
     }
 
     public function archiveProductAd($productAdId)
     {
-        return $this->_operation("productAds/{$productAdId}", null, "DELETE");
+        return $this->_operation("sp/productAds/{$productAdId}", null, "DELETE");
     }
 
     public function listProductAds($data = null)
     {
-        return $this->_operation("productAds", $data);
+        return $this->_operation("sp/productAds", $data);
     }
 
     public function listProductAdsEx($data = null)
     {
-        return $this->_operation("productAds/extended", $data);
+        return $this->_operation("sp/productAds/extended", $data);
     }
 
     public function getAdGroupBidRecommendations($adGroupId)
@@ -368,9 +368,9 @@ class Client
         return $this->_operation("asins/suggested/keywords", $data, "POST");
     }
 
-    public function requestSnapshot($recordType, $data = null)
+    public function requestSnapshot($recordType, $data = null, $type = "sp")
     {
-        return $this->_operation("{$recordType}/snapshot", $data, "POST");
+        return $this->_operation("{$type}/{$recordType}/snapshot", $data, "POST");
     }
 
     public function getSnapshot($snapshotId)
@@ -385,9 +385,9 @@ class Client
         return $req;
     }
 
-    public function requestReport($recordType, $data = null)
+    public function requestReport($recordType, $data = null, $type = "sp")
     {
-        return $this->_operation("{$recordType}/report", $data, "POST");
+        return $this->_operation("{$type}/{$recordType}/report", $data, "POST");
     }
 
     public function getReport($reportId)
