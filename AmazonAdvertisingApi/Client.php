@@ -434,6 +434,7 @@ class Client
         $headers = array(
             "Authorization: bearer {$this->config["accessToken"]}",
             "Content-Type: application/json",
+            "Amazon-Advertising-API-ClientId: {$this->config["clientId"]}",
             "User-Agent: {$this->userAgent}"
         );
 
