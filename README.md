@@ -1,6 +1,6 @@
 ## Synopsis
 
-Official Amazon Advertising API PHP client library.
+This is a fork from amazon official SDK. amzn/amazon-advertising-api-php-sdk
 
 ## Requirements
 
