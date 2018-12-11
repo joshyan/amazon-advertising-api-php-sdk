@@ -30,7 +30,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/amzn/amazon-advertising-api-php-sdk"
+            "url": "https://github.com/joshyan/amazon-advertising-api-php-sdk"
         }
     ]
 }
